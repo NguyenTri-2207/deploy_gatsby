@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: [`gatsby-plugin-gatsby-cloud`],
   pathPrefix: "/reponame",
   siteMetadata: {
     title: `Gatsby Default Starter`,
