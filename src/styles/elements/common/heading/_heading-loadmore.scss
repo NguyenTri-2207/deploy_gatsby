@@ -1,0 +1,40 @@
+.heading-loadmore {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	.heading-loadmore__title {
+		margin: 0;
+		&:hover {
+			a {
+				color: #007eff;
+			}
+		}
+	}
+
+	.heading-loadmore__link {
+		&:hover {
+			font-weight: bolder;
+		}
+		@media(max-width: 767px){
+			position: relative !important;
+			bottom: auto !important;
+			right: auto !important;
+		}
+	}
+
+	.heading-loadmore__title {
+		a {
+			color: #333333;
+		}
+	}
+
+	.heading-loadmore__link {
+		font-family: "Roboto";
+		color: #007eff;
+		font-size: 20px;
+		// margin-bottom: 10px;
+		// align-self: flex-end;
+		// margin-left: auto;
+	}
+}

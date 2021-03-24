@@ -1,0 +1,32 @@
+.slider-logo__container {
+	margin: 100px auto;
+	box-shadow: 0px 0px 15px 0px rgba(119, 119, 119, 0.15);
+
+	.slider-logo__container__title {
+		margin: 40px auto;
+		text-align: center;
+	}
+
+	.slider-logo__container__slider {
+		position: relative;
+		display: flex;
+		margin: 40px auto;
+		padding: 0;
+		overflow: hidden;
+		height: 40px;
+
+		.slider-logo__container__slider__item {
+			padding-right: 64px;
+			height: 100%;
+			filter: grayscale(100%);
+			transition: all ease-in-out 1s;
+			&:hover {
+				filter: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		margin: 50px auto;
+	}
+}

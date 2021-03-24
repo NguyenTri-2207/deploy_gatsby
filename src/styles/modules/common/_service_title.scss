@@ -1,0 +1,89 @@
+.service-account-audit-page{
+  .service-title {
+    .content-container{
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
+.service-title {
+  padding-top: 65px;
+  padding-bottom: 50px;
+  .content-container{
+    max-width: 900px;
+  }
+  h2 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: 'Noto Serif', serif;
+  }
+  .description {
+    font-family: "Roboto" !important;
+  }
+  p{
+    margin-bottom: 0;
+    margin-bottom: 10px;
+  }
+  ul{
+    list-style: disc;
+    margin-left: 40px;
+    font-size: 16px;
+    @media only screen and (max-width: 991px) {
+      margin-left: 20px;
+    }
+    li{
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: "Roboto";
+        @media(max-width: 767px){
+          font-size: 14px;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 991px) {
+  .service-title{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    .description{
+      text-align: justify;
+    }
+  }
+}
+
+/*==========================*/
+.introduction-wp{
+  margin-top: 60px;
+  @media(max-width: 991px){
+    margin-bottom: 60px;
+  }
+  @media(max-width: 767px){
+    margin-top: 30px;
+  }
+  .content-intro{
+    .title{
+      text-align: center;
+      height: 80px;
+      @media(max-width: 991px){
+        height: auto;
+        margin-bottom: 20px;
+      }
+    }
+    ul{
+      list-style: disc;
+      padding-left: 70px;
+      @media(max-width: 1199px){
+        padding-left: 50px;
+      }
+      li{
+        font-size: 16px;
+        font-family: Roboto;
+        @media(max-width: 767px){
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

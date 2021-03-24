@@ -1,0 +1,213 @@
+.bank-secretarial-merchant {
+  .service-title {
+    padding-top: 100px !important;
+    text-align: left;
+  }
+  .process {
+    padding-top: 50px;
+    h2 {
+      margin-top: 0;
+    }
+  }
+  .require {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .faqs {
+    margin: 10px 0 0px;
+  }
+}
+.company-renewal-page {
+  .process {
+    .section-process ul > li {
+      width: 31%;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}
+.transfer-agent-page,
+.company-dissolution-and-restoration-page {
+  .process {
+    .section-process ul > li {
+      width: 23%;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}
+.banking-support-page {
+  .process {
+    .section-process ul > li {
+      width: 23%;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  .require-document-horizontal .content {
+    ul {
+      list-style: disc;
+    }
+  }
+  /*========== css table filter ==========*/
+#bankService-filter {
+	padding: 30px 20px;
+	box-shadow: 0px 0px 15px 0px rgba(119, 119, 119, 0.3);
+	margin-bottom: 50px;
+	.filter-table {
+		display: flex;
+		margin-bottom: 30px;
+		select,
+		.bootstrap-select,
+		.ms-parent {
+			width: 33%;
+			margin: 0 15px;
+			padding: 5px 10px;
+			background: #fff;
+			border: 0;
+			box-shadow: 0px 0px 15px 0px rgba(119, 119, 119, 0.3);
+			font-size: 16px;
+			color: #333;
+			font-family: RobotoMedium;
+			outline: 0;
+			button {
+				background: #fff;
+				outline: 0 !important;
+				border: 0;
+				font-size: 16px;
+				color: #333;
+				box-shadow: none;
+			}
+		}
+		.dropdown-menu.open {
+			border-color: #00a6ff;
+		}
+		.dropdown-menu > .active > a,
+		.dropdown-menu > .active > a:focus,
+		.dropdown-menu > .active > a:hover {
+			background: #deecfc;
+			color: #333;
+		}
+		.caret {
+			border-top: 2px solid #00a6ff;
+			border-right: 2px solid #00a6ff;
+			width: 10px;
+			height: 10px;
+			transform: rotate(135deg);
+			top: 12px;
+			border-left: 0;
+			border-bottom: 0;
+		}
+		.ms-parent {
+			button {
+				height: 100%;
+				span {
+					position: relative;
+				}
+				div {
+					background: none;
+					border-top: 2px solid #00a6ff;
+					border-right: 2px solid #00a6ff;
+					width: 10px;
+					height: 10px;
+					top: 15px;
+					right: 15px;
+					transform: rotate(135deg);
+					border-left: 0;
+					&.icon-caret.open {
+						border-width: 0;
+						border-top: 2px solid #00a6ff;
+						border-right: 2px solid #00a6ff;
+						border-color: #00a6ff;
+					}
+				}
+			}
+			.ms-drop {
+				border-color: #00a6ff;
+				ul > li {
+					&:hover {
+						background: #deecfc;
+					}
+					label {
+						font-weight: 400;
+						font-size: 14px;
+						input {
+							margin-top: 0;
+						}
+						span {
+							padding-left: 10px;
+						}
+					}
+				}
+				ul > li.selected {
+					background: #deecfc;
+					color: #333;
+					font-size: 14px;
+				}
+			}
+		}
+		@media(max-width: 600px){
+			flex-wrap: wrap;
+			justify-content: center;
+			.dropdown.bootstrap-select{
+				width: 80%;
+				&:not(:last-child){
+					margin-bottom: 10px;
+				}
+				@media(max-width: 360px){
+					width: 100%;
+				}
+			}
+		}
+  }
+  td.title{
+    border-bottom: 1px solid #ddd;
+  }
+  .table > tbody > tr:nth-child(even) td{
+    background: #f6f6f6;
+  }
+  .table-service.table > tbody > tr{
+    border-bottom: 0;
+  }
+  @media(max-width: 600px){
+    .filter-table{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+}
+.merchant-account-page {
+  .require-document-horizontal .content {
+    ul {
+      list-style: disc;
+    }
+  }
+}
+.transfer-agent-page {
+  .require-document-horizontal .content {
+    ul {
+      list-style: decimal;
+    }
+  }
+}
+.nominee-director-shareholder-page {
+  .button-bg {
+    button {
+      max-width: 430px;
+      width: 430px;
+      @media only screen and (max-width: 500px) {
+        font-size: 18px;
+        max-width: 380px;
+        width: 380px;
+      }
+      @media only screen and (max-width: 400px) {
+        max-width: 310px;
+        width: 310px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.content-account-audit {
+  .service-title {
+    padding-top: 50px;
+    .container {
+      width: auto;
+    }
+  }
+  div:not(.service-title) + div.service-title {
+    padding-bottom: 25px !important;
+    padding-top: 65px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .content-account-audit .left .service-title {
+    padding-bottom: 0;
+  }
+  .content-account-audit .right .service-title {
+    padding-top: 25px;
+  }
+}

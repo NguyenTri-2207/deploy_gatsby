@@ -1,0 +1,41 @@
+.categories {
+  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.2);
+  @include block-shadow();
+  h3 {
+    padding: 30px 20px;
+    font-size: 20px;
+    font-family: "RobotoMedium";
+    margin: 0;
+    border-bottom: 2px solid #f5f5f5;
+    @media only screen and (max-width: 991px) {
+      font-size: 19px;
+    }
+    @media only screen and (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+  .categories-content {
+    padding: 10px;
+    -ms-box-orient: horizontal;
+    a {
+      color: #777777;
+      font-size: 16px;
+      padding: 6px 10px;
+      margin: 10px;
+      background-color: #f5f5f5;
+      display: inline-block;
+      border-radius: 3px;
+      font-family: "Roboto";
+      @media only screen and (max-width: 991px) {
+        font-size: 15px;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 14px;
+      }
+      &:hover{
+        color: $white;
+        background-color: #007eff;
+      }
+    }
+  }
+}

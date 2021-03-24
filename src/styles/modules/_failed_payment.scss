@@ -1,0 +1,44 @@
+.section-failed-payment {
+  .content {
+    max-width: 767px;
+    margin: 0 auto;
+    background-color: #f0ffff;
+    padding: 30px 20px;
+    h6 {
+      font-weight: 700;
+      font-family: "Roboto";
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    p {
+      margin: 0 0 20px;
+    }
+    ul,
+    ol {
+      margin-left: 40px;
+      margin-bottom: 16px;
+      li {
+        line-height: 24px;
+      }
+    }
+    .ul-disc {
+      list-style: disc;
+    }
+    .ol-alpha {
+      list-style: upper-alpha;
+    }
+    .ol-number {
+      list-style: decimal;
+      a {
+        color: #0073ac;
+        &:hover{
+            text-decoration: underline;
+
+        }
+      }
+    }
+    .ptext-bottom-page{
+        margin-bottom: 0;
+    }
+  }
+}

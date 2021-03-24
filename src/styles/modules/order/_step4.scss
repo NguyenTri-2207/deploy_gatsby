@@ -1,0 +1,467 @@
+#order-step4 {
+  .title {
+    padding: 100px 0 0px;
+    // @media (max-width: 1367px) {
+    //   padding-bottom: 20px;
+    // }
+    .title-page {
+      text-align: center;
+
+      h1 {
+        font-size: 45px;
+        font-family: "RobotoLight";
+        margin-bottom: 40px;
+        @media (max-width: 767px) {
+          font-size: 36px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        font-family: "RobotoLight";
+        overflow: hidden;
+      }
+    }
+  }
+  .review-order {
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    .sub-title {
+      border-bottom: 1px solid #9b9b9b;
+      padding-bottom: 8px;
+      margin: 0 0 15px;
+      font-size: 22px;
+      font-family: "RobotoBold";
+      i {
+        margin-right: 8px;
+      }
+    }
+    span {
+      font-family: "Roboto";
+      font-size: 16px;
+      font-weight: normal;
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+    p.phone {
+      text-align: right;
+      #phone {
+        display: inline-block;
+        min-width: 100px;
+      }
+      @media (max-width: 767px) {
+        text-align: left;
+        margin-left: 15px;
+      }
+    }
+    .full_name,
+    .email,
+    .company-type {
+      margin-left: 15px;
+    }
+    .country,
+    .company_type,
+    .company-company_name {
+      margin-left: 30px;
+    }
+    .fw-500 {
+      font-weight: 500;
+    }
+    .robotoBold-family {
+      font-family: "RobotoBold";
+    }
+    .name_service {
+      margin-left: 15px;
+      white-space: pre-line;
+    }
+    .cl-md-6 {
+      width: 50%;
+      position: relative;
+    }
+    .content-contact,
+    .content-company,
+    .content-package,
+    .other-service,
+    .content-total {
+      margin-bottom: 30px;
+    }
+    .content-total {
+      border-top: 1px solid #9b9b9b;
+      padding-top: 8px;
+      p,
+      .prom_price {
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .price_nprom {
+        text-decoration: line-through;
+        margin-right: 5px;
+      }
+    }
+    .content-payment {
+      [type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      [type="radio"]:checked + label {
+        border: 2px solid #3e99f5;
+        border-radius: 15px;
+      }
+      label {
+        width: 100%;
+        height: 120px;
+        border: 2px solid #cac8c8;
+        border-radius: 15px;
+        position: relative;
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+
+          max-width: 100%;
+        }
+      }
+      .bank_transfer {
+        position: relative;
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90%;
+          text-align: center;
+        }
+      }
+
+      input[type="radio"],
+      label {
+        cursor: pointer;
+      }
+      .payment-col {
+        padding: 10px 30px;
+        @media (max-width: 400px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .button-payment {
+    color: #ffffff;
+    margin-bottom: 50px;
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    button {
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      display: block;
+      height: 40px;
+      margin: 10px auto;
+      width: 90%;
+      i.fa-spin {
+        margin-left: 10px;
+      }
+    }
+    .fa,
+    .fab {
+      margin-right: 5px;
+    }
+    .stripe {
+      background-color: #4dbb6d;
+    }
+    .paypal {
+      background-color: #0061bb;
+    }
+  }
+  .button-container {
+    margin-bottom: 50px;
+    .container {
+      max-width: 850px;
+    }
+    .comodo {
+      a {
+        color: #333;
+      }
+    }
+    .term-condition {
+      max-width: 500px;
+      display: block;
+      margin: 20px auto;
+      p {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    .button-order {
+      text-align: right;
+      .button-next-step {
+        display: block;
+        margin: 0 auto;
+        text-transform: capitalize;
+        background: #007eff;
+        border-radius: 50px;
+        padding: 8px 35px;
+        font-size: 22px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #007eff;
+        font-family: "Roboto";
+        text-align: center;
+        &:focus {
+          outline: none;
+        }
+        i {
+          margin-left: 10px;
+        }
+      }
+      @media (max-width: 767px) {
+        margin: 20px auto;
+      }
+    }
+  }
+}
+// ***************************************UPDATE STRIPE******************************
+/* css header */
+.main {
+  max-height: 100%;
+  // overflow-y: auto;
+}
+
+/*========= style popup stripe ========*/
+#modal-stripe, #modal-paymentStripe {
+  background: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  // height: 100%;
+  z-index: 2000000001 !important;
+  transition: 0.3s;
+  display: none;
+  .modal-popup {
+    max-width: 450px;
+    // height: 600px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    // @media (max-width: 991px) {
+    // 	width: 350px;
+    // 	height: 500px;
+    // }
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      color: #000;
+      opacity: 1;
+      text-shadow: 0 !important;
+      z-index: 99;
+    }
+    .modal-header {
+      border: none;
+      text-align: center;
+      .img-logo {
+        width: 70px;
+        margin: -80px auto 0;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18), 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+        padding: 3px;
+      }
+      h3,
+      a {
+        font-family: Roboto;
+        text-align: center;
+        font-weight: 500;
+      }
+      a {
+        color: #333;
+        font-size: 16px;
+        display: block;
+        font-weight: 400;
+      }
+    }
+    .modal-body {
+      padding-top: 20px;
+    }
+    .modal-content {
+      box-shadow: none;
+      padding: 35px 0;
+    }
+  }
+  .form-row {
+    margin: 0 auto;
+    padding: 0 30px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  #card-element {
+    width: 100%;
+    padding: 30px 0;
+  }
+  // /* css button submit */
+  .p-8 {
+    padding: 2rem !important;
+  }
+  .MuiButtonBase-root {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 22px;
+    font-size: 12px;
+    background-color: #3ea8e5;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+    &:focus {
+      outline: none;
+      // opacity: 1;
+      opacity: 0.6;
+      transition: 0.3s;
+      background-color: #007eff;
+      border: none;
+      color: white;
+    }
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    font-family: 'Roboto';
+    letter-spacing: 1.1px;
+  }
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+  .StripeElement {
+    padding: 30px 10px;
+  }
+  .ElementsApp,
+  .ElementsApp .InputElement {
+    color: #424770;
+    letter-spacing: 0.025em;
+    font-size: 18px;
+  }
+  .StripeElement--focus {
+    /* box-shadow: 0 1px 3px 0 #cfd7df; */
+  }
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+  /* css button close */
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  svg {
+    overflow: hidden;
+  }
+  /* css modal center */
+  .modal-dialog {
+    max-width: 100%;
+    width: 450px !important;
+    overflow: visible;
+  }
+  .modal.show {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+  }
+  .paymentModal {
+    /* width: 100%; */
+    padding: 1.75rem 0;
+    margin: auto;
+  }
+  .fade {
+    transition: opacity 0.15s linear;
+  }
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0 solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.42rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    outline: 0;
+  }
+  @media (min-width: 768px) {
+    .dialog-header .btn-close-dialog {
+      right: 0;
+      left: auto;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .modal-content {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.service-virtual-office {
+  margin-bottom: 100px;
+  .features {
+    .feature {
+      width: 25%;
+      padding: 15px;
+      .content {
+        height: 100%;
+        padding: 30px;
+        border-radius: 20px;
+        img {
+          margin-bottom: 25px;
+          height: 80px;
+          width: auto;
+        }
+        a {
+          font-family: "Roboto";
+          font-size: 20px;
+          color: #333333;
+          @media only screen and (max-width: 767px) {
+            font-family: "RobotoMedium";
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .service-title {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-virtual-office {
+    margin-bottom: 50px;
+    .service-title {
+      padding-top: 25px;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-virtual-office {
+    .features {
+      .feature {
+        width: 50%;
+        padding: 0;
+        .content {
+          padding: 10px;
+          img {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .service-virtual-office {
+    .features {
+      .feature {
+        width: 100%;
+        padding: 0;
+        .content {
+          padding: 10px;
+          img {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,758 @@
+.banking-tool-page{
+	.navbar-fixed-top{
+		background: #fff;
+		box-shadow: 0px 0px 15px 0px rgba(119, 119, 119, 0.3);
+		.navbar-logo{
+		  img{
+			&.logo-text{
+			  display: none;
+			}
+			&.logo-text-2{
+			  display: inline-block;
+			}
+		  }
+		}
+		ul.navbar-item{
+		  li a{
+			color: #000;
+		  }
+		  li.active-item{
+			a.main{
+			  color: #00a6ff;
+			}
+		  }
+		}
+		.set-up-now{
+		  button.setupnow{
+			background-color: #007eff;
+			color: #ffffff;
+			border: 2px solid #007eff;
+			&:hover{
+			  background-color: #00a6ff;
+			  border: 2px solid #00a6ff;
+			}
+		  }
+		}
+	}
+	.section-bankingTool{
+		background: linear-gradient(to top, #2da6fa, #1dd5e6);
+		position: relative;
+		height: 100%;
+		.container{
+			background: #fff;
+			.row{
+				&:nth-child(2){
+					display: flex;
+				}
+			}
+		}
+		#checkout-progress{
+			padding-top: 150px;
+			.progress-barbank{
+				display: flex;
+				justify-content: space-around;
+				.step{
+					text-align: center;
+					position: relative;
+					.step-label{
+						margin-top: 5px;
+						font-weight: 500;
+						font-family: Roboto;
+						color: #797979;
+						font-size: 16px;
+					}
+					.line{
+						height: 1px;
+						width: 200px;
+						background: #ccc;
+						position: absolute;
+						top: 20px;
+					}
+					img.img-active{
+						display: none;
+					}
+					.opaque{
+						display: none;
+					}
+					.fa.fa-check{
+						border: solid 1px #1eb40f;
+						background: #1eb40f;
+						color: #fff;
+						height: 33px;
+						width: 33px;
+						border-radius: 50%;
+						line-height: 33px;
+						font-size: 18px;
+					}
+					&.step-2 .line{
+						left: -113%;
+					}
+					&.step-3 .line{
+						left: -65%;
+					}
+					&.valid, &.active {
+						span.line{
+							background: #007dff;
+							opacity: .2;
+						}
+					}
+					&.active {
+						.step-label{
+							color: #007dff;
+						}
+						img.img-active{
+							display: inline-block;
+						}
+						img.img-show{
+							display: none;
+						}
+					}
+					&.step-1.active{
+						img.img-show{
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+		.content-left{
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+			border-radius: 8px;
+			text-align: center;
+			margin: 30px 0;
+			padding: 40px 75px;
+			// height: 850px;
+			height: 920px;
+			position: relative;
+			p.title-bank{
+				font-weight: 500;
+				text-align: left;
+				margin: 0 auto 10px;
+			}
+			p.label_warning{
+				display: none;
+				margin-top: 10px;
+				margin-bottom: 0;
+				text-align: left;
+				font-size: 14px;
+				color: #EB4848;
+			}
+			button.btn-common{
+				display: block;
+				font-size: 16px;
+				font-weight: 500;
+				margin: 0 auto;
+				background: #fff;
+				box-shadow: 0px 0px 15px 0px rgba(119, 119, 119, 0.3);
+				border: none;
+				border-radius: 5px;
+				outline: none;
+				width: 600px;
+				padding: 9px;
+				&:hover, &:focus{
+					background: #007eff;
+					color: #fff;
+				}
+				&.btn-active{
+					background: #007dff;
+					color: #fff;
+				}
+			}
+			.bank-mgbt{
+				&:not(:last-of-type){
+					margin-bottom: 45px;
+				}
+			}
+			.bank-mgbt1{
+				&:not(:last-of-type){
+					margin-bottom: 40px;
+				}
+			}
+			.btn-exception{
+				button.btn-common{
+					display: inline-block;
+    				width: 47%;
+					&:nth-child(2){
+						margin-bottom: 0 !important;
+						margin-right: 5%;
+					}
+				}
+			}
+			.select-banking{
+				.dropdown.bootstrap-select{
+					max-width: 600px;
+					width: 100%;
+					.btn.dropdown-toggle{
+						background: #fff;
+						box-shadow: 0px 0px 15px 0px rgba(119, 119, 119, 0.3);
+						outline: none;
+						border: none;
+						padding: 10px;
+						&:focus{
+							outline: none !important;
+						}
+						.filter-option-inner-inner{
+							font-size: 15px;
+						}
+					}
+					.dropdown-menu.open{
+						max-height: 400px !important;
+						top: 42px !important;
+						bottom: auto !important;
+						overflow-y: auto !important;
+					}
+				}
+				.select2-container--default{
+					width: 600px !important;
+					height: 35px;
+					font-size: 16px;
+					.select2-selection--multiple{
+						border-radius: 5px;
+						border: 0;
+						box-shadow: 0px 0px 15px 0px rgba(119, 119, 119, 0.3);
+						position: absolute;
+						top: 0;
+						width: 100%;
+						.select2-selection__rendered{
+							padding: 5px 20px;
+							max-height: 68px;
+    						overflow-y: auto;
+						}
+						.select2-selection__choice{
+							position: relative;
+							padding-right: 15px;
+							.select2-selection__choice__remove{
+								position: absolute;
+								right: 0px;
+							}
+						}
+						&:before{
+							content: ' ';
+							display: block;
+							position: absolute;
+							border-color: #888 transparent transparent transparent;
+							border-style: solid;
+							border-width: 4px 4px 0 4px;
+							height: 0;
+							right: 10px;
+							margin-left: -4px;
+							margin-top: -2px;
+							top: 50%;
+							width: 0;
+							cursor: pointer
+						}
+					}
+					.select2-search--inline .select2-search__field{
+						width: 100% !important;
+						cursor: pointer;
+						font-size: 15px;
+					}
+				}
+				.select2-container--open .select2-selection--multiple:before {
+					content: ' ';
+					display: block;
+					position: absolute;
+					border-color: #888 transparent transparent transparent;
+					border-width: 4px 4px 0 4px;
+					height: 0;
+					right: 10px;
+					margin-left: -4px;
+					margin-top: -2px;
+					top: 50%;
+					width: 0;
+					cursor: pointer
+				}
+			}
+			.selectBank-third{
+				button.btn-common{
+					&.bank-yes{
+    					margin-bottom: 20px;
+					}
+				}
+			}
+			.selectBank{
+				button{
+					&:not(:last-of-type){
+						margin-bottom: 15px;
+					}
+				}
+				&.question1, &.question2{
+					display: none;
+				}
+				&.show-onshore{
+					display: block;
+				}
+			}
+			.button-step{
+				display: flex;
+				margin-top: 50px;
+				justify-content: space-between;
+				align-items: center;
+				.btn{
+					font-size: 16px;
+					font-weight: 500;
+					font-family: Roboto;
+					outline: 0;
+					background: transparent;
+					border: 1px solid #007dff;
+					border-radius: 0;
+					padding: 8px 20px;
+					color: #007dff;
+					&:focus{
+						box-shadow: none;
+						outline: 0;
+					}
+					&.btn-reset{
+						border: 0;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+					&.btn-prev, &.btn-next{
+						&:hover{
+							background: #007dff;
+							color: #fff;
+						}
+					}
+				}
+				.btn.disabled, .btn[disabled], fieldset[disabled] .btn{
+					opacity: .2;
+					mix-blend-mode: luminosity;
+				}
+				.show-btn{
+					visibility: hidden;
+				}
+			}
+			p.note-tool{
+				position: absolute;
+				bottom: 10px;
+				text-align: left;
+				width: 85%;
+			}
+		}
+		.content-right{
+			margin: 30px 0;
+			.show-score, .show-bank{
+				background: #fff;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+				border-radius: 8px;
+				p.title-right{
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+			.show-score{
+				padding: 30px 0 20px;
+				text-align: center;
+				margin-bottom: 30px;
+				p.score{
+					font-size: 30px;
+					text-align: center;
+					font-weight: 600;
+					text-transform: uppercase;
+					height: 170px;
+					width: 170px;
+					margin: 0 auto 20px;
+					line-height: 155px;
+					border: 10px solid #ccc;
+					border-radius: 50%;
+					position: relative;
+				}
+				canvas {
+					display: block;
+					position:absolute;
+					top: -10px;
+					left: -10px;
+				}
+				p.talk-to{
+					margin-bottom: 0;
+					a{
+						font-size: 16px;
+						font-weight: 500;
+						border: 1px solid #007eff;
+						border-radius: 40px;
+						color: #007eff;
+						padding: 15px 40px;
+						display: inline-block;
+					}
+					button.btn-talkto{
+						font-size: 20px;
+						font-weight: 500;
+						background: #007eff;
+						border-radius: 20px;
+						padding: 8px 30px;
+						box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.42);
+						border: 0;
+						color: #fff;
+						&:focus, &:hover{
+							outline: 0;
+						}
+						&.disabled{
+							background: #a8a8a8;
+						}
+					}
+				}
+			}
+			.show-bank{
+				padding: 30px 0;
+				text-align: center;
+				// max-height: 470px;
+				// height: 465px;
+				max-height: 550px;
+				height: 532px;
+				// overflow-y: auto;
+				.show-title{
+					height: 50px;
+				}
+				p#count-bank{
+					text-align: left;
+					padding-left: 25px;
+					color: #007eff;
+					font-size: 15px;
+					span{
+						color: #333;
+						font-size: 14px;
+					}
+				}
+				.bankTool-card{
+					margin-top: 20px;
+					// height: 368px;
+					height: 420px;
+					overflow-y: auto;
+					.card-bank{
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						background: #fff;
+						box-shadow: 0px 0px 15px 0px rgba(119, 119, 119, 0.3);
+						padding: 0 8px;
+						margin: 0 10px 10px;
+						position: relative;
+						h4.title{
+							font-size: 16px;
+							font-weight: 600;
+						}
+						p{
+							font-size: 15px;
+						}
+						.left-card{
+							text-align: left;
+						}
+						span.content-hover{
+							cursor: pointer;
+							margin-left: 5px;
+							i{
+								color: #007eff;
+							}
+							&:before{
+								position: absolute;
+								content:'Only assist for UAE companies, or offshore companies with UAE ID holders and physical establishments.';
+								display: none;
+								background: #007eff;
+								width: 195px;
+								height: 108px;
+								top: -110px;
+								color: #fff;
+								padding: 10px;
+								font-size: 15px;
+								line-height: 18px;
+								font-weight: 400;
+								font-family: 'Roboto';
+								border-radius: 5px;
+							}
+							&:after{
+								position: absolute;
+								content: '';
+								display: none;
+								border-top: 10px solid #007eff;
+								border-left: 0px solid transparent;
+								border-right: 8px solid transparent;
+								width: 0;
+								height: 0;
+								top: -2px;
+							}
+							&:hover{
+								&:before, &:after{
+									display: inline-block;
+								}
+							}
+						}
+					}
+				}
+				#content-exception{
+					display: none;
+					p.title-right{
+						color: red;
+						font-weight: 400;
+						font-size: 17px;
+					}
+					p#reset-data{
+						text-transform: uppercase;
+						margin-top: 20px;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		@media(max-width: 1199px){
+			#checkout-progress .progress-barbank{
+				.step{
+					&.step-2{
+						.line{
+							left: -85%;
+						}
+					}
+					&.step-3{
+						.line{
+							left: -55%;
+						}
+					}
+				}
+			}
+			.content-left {
+				padding: 40px 70px;
+    			height: 988px;
+				.select-banking .select2-container--default{
+					width: 470px !important;
+				}
+				.bank-mgbt:not(:last-of-type){
+					margin-bottom: 30px;
+				}
+				button.btn-common{
+					width: 470px;
+				}
+			}
+		}
+		@media(max-width: 991px){
+			background: transparent;
+			.container .row:nth-child(2){
+				flex-wrap: wrap;
+				.col-md-4.bankMobile{
+					width: 100%;
+					position: absolute;
+					background: #fff;
+					top: 60px;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					padding-bottom: 40px;
+					.content-right{
+						display: block;
+					}
+				}
+			}
+			#checkout-progress {
+				padding-top: 100px;
+				.progress-barbank .step {
+					.line{
+						width: 150px;
+					}
+					.step-label{
+						font-size: 15px;
+					}
+					&.step-2{
+						.line{
+							left: -60%;
+						}
+					}
+					&.step-3{
+						.line{
+							left: -35%;
+						}
+					}
+				}
+			}
+			.content-left, .content-right .show-bank{
+				height: auto;
+			}
+			.content-left{
+				box-shadow: none;
+				padding: 30px 75px 0px;
+				.select-banking .dropdown.bootstrap-select{
+					max-width: 472px;
+				}
+				.btn-exception button.btn-common{
+					width: 39%;
+				}
+				p.note-tool{
+					position: relative;
+					bottom: auto;
+					margin-top: 20px;
+					width: 100%;
+				}
+			}
+			.content-right {
+				display: none;
+				margin: 0;
+				.show-bank {
+					padding-top: 0;
+					p.title-right{
+						br{
+							display: none;
+						}
+					}
+				}
+				.show-bank, .show-score{
+					box-shadow: none;
+				}
+				.show-score{
+					margin-bottom: 0;
+				}
+			}
+			.result-mobile{
+				display: block !important;
+				text-align: center;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				background: #fff;
+				box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.25);
+				color: #007eff;
+				padding: 20px 0;
+				z-index: 1030;
+				p{
+					font-size: 15px;
+					font-weight: 900;
+					margin: 0;
+				}
+			}
+		}
+		@media(max-width: 767px){
+			p{
+				font-size: 16px;
+			}
+			.content-left button.btn-common{
+				font-size: 15px;
+			}
+			#checkout-progress{
+				.progress-barbank {
+					position: relative;
+					.step{
+						position: unset;
+						.step-label{
+							display: none;
+						}
+						&.active .step-label{
+							display: block;
+							position: absolute;
+							left: 50%;
+							transform: translateX(-50%);
+							width: 100%;
+							top: 40px;
+						}
+						.line{
+							width: 100px;
+							position: relative;
+							display: inline-block;
+							top: auto;
+						}
+						&.step-2 .line{
+							left: -68%;
+						}
+						&.step-3 .line{
+							left: -60%;
+						}
+						.fa.fa-check{
+							border: solid 1px #797979;
+    						background: #797979;
+						}
+					}
+				}
+			}
+		}
+		@media(max-width: 649px){
+			#checkout-progress .progress-barbank{
+				.step.step-2 .line{
+					left: -50%;
+				}
+				.step.step-3 .line{
+					left: -40%;
+				}
+			}
+			.content-left {
+				.select-banking {
+					.dropdown.bootstrap-select{
+						max-width: none;
+					}
+					.select2-container--default{
+						width: 100% !important;
+					}
+				}
+				.bank-mgbt1:not(:last-of-type){
+					margin-bottom: 30px;
+				}
+				button.btn-common{
+					width: 100%;
+				}
+				.btn-exception button.btn-common{
+					width: 47%;
+				}
+			}
+			.content-right{
+				.show-bank{
+					max-height: 325px;
+					.bankTool-card{
+						height: 310px;
+						margin-top: 25px;
+					}
+				}
+			}
+		}
+		@media(max-width: 564px){
+			.content-left {
+				padding: 20px 30px 0px;
+				.select-banking .dropdown.bootstrap-select .dropdown-menu.open{
+					width: 100%;
+					min-width: 100% !important;
+				}
+			}
+			.result-mobile{
+				padding: 20px 0;
+			}
+		}
+		@media(max-width: 474px){
+			#checkout-progress .progress-barbank{
+				.step.step-2{
+					.line{
+						left: -25%;
+					}
+				}
+				.step.step-3{
+					.line{
+						left: -20%;
+					}
+				}
+			}
+			.content-left {
+				padding: 20px 15px 0px;
+				.btn-exception button.btn-common{
+					width: 45%;
+				}
+			}
+		}
+		@media(max-width: 375px){
+			#checkout-progress .progress-barbank{
+				.step.step-2, .step.step-3{
+					.line{
+						left: -10%;
+					}
+				}
+				.step .line{
+					width: 80px;
+				}
+			}
+			.content-left{
+				.bank-mgbt:not(:last-of-type){
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+	@media(max-width: 991px){
+		.cookies{
+			left: 0;
+			width: 40%;
+			transform: none;
+		}
+	}
+}

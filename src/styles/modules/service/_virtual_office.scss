@@ -1,0 +1,230 @@
+$radius-px: 25px;
+@mixin package-common {
+  // padding-left: 0;
+  // padding-right: 0;
+  @media only screen and (max-width: 767px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  background-color: #fbfbfb;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.2);
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Roboto";
+    margin: 12px 0;
+  }
+  .block-one {
+    border-bottom: 2px solid #efefef;
+    padding: 30px;
+    li {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 28px 30px 28px 30px;
+      li {
+        font-size: 18px;
+      }
+    }
+  }
+  .block-two {
+    padding: 30px;
+
+    li {
+      font-size: 16px;
+      // @media only screen and (max-width: 767px) {
+      //   font-size: 12px;
+      // }
+    }
+  }
+  h5 {
+    font-family: "RobotoBold";
+    font-size: 20px;
+  }
+  .fas {
+    margin-right: 10px;
+  }
+  .title {
+    margin: 0;
+    padding: 20px 30px;
+    font-size: 36px;
+    color: #ffffff;
+    @media only screen and (max-width: 991px) {
+      font-size: 28px;
+    }
+  }
+}
+
+.content-virtual-office {
+  .package-virtual-office {
+    padding-top: 70px;
+    @media only screen and (max-width: 991px) {
+      padding-top: 0px;
+    }
+    .cl-md-4{
+      width: 33.3%;
+      &:first-of-type{
+        padding: 0 15px;
+      }
+      @media(max-width: 991px){
+        width: 100%;
+      }
+    }
+    .package {
+      align-items: center;
+      .premium {
+        @include package-common();
+        .title {
+          background-color: #ffb400;
+          font-family: "Noto Serif", serif;
+        }
+        .fas {
+          color: #ffb400;
+        }
+      }
+      .basic {
+        @include package-common();
+        .title {
+          background-color: #007eff;
+          font-family: "Noto Serif", serif;
+        }
+        .fas {
+          color: #007eff;
+        }
+      }
+    }
+  }
+  .price-virtual-office {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    .nav > li > a:hover {
+      color: $white !important;
+    }
+    h3 {
+      font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    ul {
+      margin: 40px auto 0;
+      max-width: 800px;
+      @media (max-width: 766px) {
+        padding: 0 15px;
+      }
+      a {
+        color: $blue !important;
+        // padding: 0;
+        font-size: 20px;
+        font-family: "RobotoMedium";
+        padding: 0 30px;
+        text-align: center;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        line-height: 45px;
+        @media (max-width: 767px) {
+          padding: 13px 0px;
+          font-size: 18px;
+          line-height: 0;
+        }
+      }
+      li {
+        border-top: 2px solid $blue;
+        border-bottom: 2px solid $blue;
+        border-right: 2px solid $blue;
+        &:hover {
+          background: #007eff !important;
+          border-color: #007eff;
+        }
+        &.active {
+          background-color: $blue;
+          a {
+            color: $white !important;
+          }
+          &:hover {
+            background: #00a6ff !important;
+            border-color: #00a6ff;
+          }
+        }
+        @media (max-width: 766px) {
+          margin: 0 4% 10px;
+        }
+        @media (max-width: 355px) {
+          padding: 0;
+        }
+
+        &:first-child {
+          border-left: 2px solid $blue;
+          border-top-left-radius: $radius-px;
+          border-bottom-left-radius: $radius-px;
+          //margin-right: 8.3%;
+        }
+        &:last-child {
+          border-top-right-radius: $radius-px;
+          border-bottom-right-radius: $radius-px;
+        }
+        a:hover,
+        a:focus {
+          background-color: transparent;
+        }
+      }
+    }
+    .tab-content {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .button-container {
+      .button {
+        background: $blue !important;
+        color: $white;
+      }
+    }
+  }
+  .section-process ul > li {
+    width: 23%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .content-virtual-office {
+    .price-virtual-office {
+      padding-bottom: 25px;
+      padding-top: 25px;
+      h3 {
+        font-size: 28px;
+      }
+      ul {
+        max-width: 550px;
+        li {
+          border: 2px solid $blue !important;
+          border-radius: $radius-px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .section-process ul > li {
+      width: 22%;
+    }
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .content-virtual-office {
+    .price-virtual-office {
+      ul {
+        li {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .content-virtual-office {
+    .section-process ul > li {
+      width: 100%;
+    }
+  }
+}

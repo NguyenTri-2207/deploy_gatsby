@@ -1,0 +1,229 @@
+// .faqs {
+// 	margin: 10px 0 80px;
+
+// 	.faqs__item {
+// 		position: relative;
+// 		background: #f6f6f6;
+// 		margin-top: 7px;
+// 		padding: 5px 30px;
+
+// 		.faqs__item__title {
+// 			font-size: 16px;
+// 			cursor: pointer;
+// 			&::before,
+// 			&::after {
+// 				content: "";
+// 				position: absolute;
+// 				top: 50%;
+// 				right: -10px;
+// 				width: 15px;
+// 				height: 3px;
+// 				background: #007eff;
+// 				border-radius: 1.5px;
+// 			}
+
+// 			&::after {
+// 				transform: rotate(90deg);
+// 				transition: all ease-in-out .25s;
+// 			}
+// 		}
+
+// 		&.active {
+// 			.faqs__item__title {
+// 				&::after {
+// 					transform: rotate(180deg);
+// 				}
+// 			}
+// 		}
+
+// 		.faqs__item__content {
+// 			p:last-of-type {
+// 				margin: 0;
+// 			}
+// 		}
+
+// 		.faqs__item__title {
+// 			position: relative;
+// 			font-family: "RobotoMedium";
+// 		}
+
+// 		.faqs__item__content {
+// 			width: 85%;
+// 			overflow: hidden;
+// 			font-family: "Roboto";
+// 			transition: all ease-in-out .25s;
+// 			@media(max-width: 767px){
+// 				overflow: auto;
+// 			}
+// 		}
+// 	}
+
+// 	ul {
+// 		margin-left: 40px;
+
+// 		@media only screen and (max-width: 991px) {
+// 			margin-left: 20px;
+// 		}
+
+// 		list-style: disc;
+
+// 		strong {
+// 			font-style: normal;
+// 			font-size: 16px;
+// 			font-family: "RobotoBold";
+
+// 			@media only screen and (max-width: 991px) {
+// 				font-size: 14px;
+// 			}
+// 		}
+// 	}
+// }
+.section-faqs {
+	margin-top: 70px;
+	@media (max-width: 767px) {
+		margin-top: 20px;
+	}
+	.text-center {
+		max-width: 500px;
+		margin: 0 auto 30px;
+		h2 {
+			margin-bottom: 25px;
+		}
+		p {
+			a {
+				color: #333;
+				text-decoration: underline;
+			}
+		}
+	}
+	.row-faqs {
+		margin-bottom: 40px;
+		.panel {
+			border: 0;
+			border-radius: 0;
+			background-color: transparent;
+			box-shadow: none;
+			.panel-title {
+				background: #f6f6f6;
+				margin: 0;
+				padding: 15px 30px;
+				font-family: RobotoMedium;
+				font-size: 16px;
+				position: relative;
+				&::before,
+				&::after {
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: 20px;
+					width: 15px;
+					height: 3px;
+					background: #007eff;
+					border-radius: 1.5px;
+				}
+				&::after {
+					transform: rotate(90deg);
+					transition: all ease-in-out 0.25s;
+				}
+				&.active {
+					&::after {
+						transform: rotate(180deg);
+					}
+				}
+			}
+			.panel-body {
+				padding: 0 30px;
+				background: #f6f6f6;
+				.content {
+					width: 85%;
+					margin-top: 10px;
+					text-align: justify;
+				}
+			}
+		}
+		.panel-body {
+			.content {
+				ul {
+					margin-left: 40px;
+					margin-bottom: 16px;
+					@media only screen and (max-width: 991px) {
+						margin-left: 20px;
+					}
+					list-style: disc;
+					li {
+						font-size: 16px;
+						font-family: "Roboto";
+					}
+					strong {
+						font-style: normal;
+						font-size: 16px;
+						font-family: "RobotoBold";
+						@media only screen and (max-width: 991px) {
+							font-size: 14px;
+						}
+					}
+				}
+				a {
+					color: #007eff;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				table {
+					thead {
+						tr {
+							th {
+								font-size: 16px;
+							}
+						}
+					}
+					tbody {
+						tr {
+							td {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	a.see-faq {
+		display: inline-block;
+		position: relative;
+		span {
+			color: #007eff;
+			font-size: 20px;
+			font-weight: 400;
+			i {
+				font-size: 15px;
+				font-weight: 400;
+				margin-left: 0.5rem;
+			}
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 1px;
+			background: #007eff;
+			right: 0;
+			bottom: 0;
+			left: auto;
+			transition: all 0.2s linear;
+		}
+		&:hover {
+			&:before {
+				width: 100%;
+				left: 0;
+				right: auto;
+			}
+		}
+	}
+	.btn-center {
+		text-align: center;
+		.button {
+			padding: 7px 100px;
+		}
+	}
+}

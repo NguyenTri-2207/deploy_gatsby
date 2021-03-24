@@ -1,0 +1,64 @@
+.virtual-office-product {
+  padding: 0;
+  margin: 15px 0;
+  width: 33.33%;
+  @media(max-width: 991px){
+    width: 50%;
+  }
+  .content {
+    padding: 0;
+    box-shadow: 0px 0px 18px 0px rgba(119, 119, 119, 0.3);
+    margin: 15px;
+  }
+  .detail {
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
+    min-height: 290px;
+    h3 {
+      font-size: 25px;
+      padding: 18px 30px;
+      margin: 0;
+      font-weight: 500;
+      font-family: "Noto Serif", serif;
+    }
+    p {
+      margin: 0;
+      font-family: "Roboto";
+      padding-bottom: 12px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    img {
+      width: 100%;
+      // height: auto;
+      height: 200px;
+      display: inline-block;
+      max-width: 100%;
+      min-width: 48px;
+      min-height: 48px;
+      background-repeat: no-repeat;
+      background-image: url('/images/download.gif');
+      background-position: center;
+      @media(max-width: 600px){
+        height: 100%;
+      }
+    }
+  }
+  .price-container {
+    padding: 20px 30px;
+    .price {
+      color: $blue;
+      font-size: 22px;
+      font-family: "Noto Serif", serif;
+    }
+    .name-package {
+      font-family: "RobotoMedium";
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .virtual-office-product {
+    width: 100%;
+  }
+}

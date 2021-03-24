@@ -1,0 +1,43 @@
+.related-service-container {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  .title {
+    font-size: 36px;
+    font-family: "Noto Serif", serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .related-services {
+    padding: 10px;
+    border-left: 3px solid $blue;
+    -ms-box-orient: horizontal;
+    margin-top: 30px;
+    a {
+      color: $blue;
+      padding: 6px 10px;
+      font-family: "Robotobold";
+      font-size: 20px;
+      margin: 10px;
+      background-color: #f5f5f5;
+      display: inline-block;
+      border-radius: 3px;
+      @media only screen and (max-width: 991px) {
+        font-size: 19px;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 18px;
+      }
+      &:hover {
+        color: $white;
+        background-color: #007eff;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .related-service-container {
+    margin-top: 0;
+  }
+}

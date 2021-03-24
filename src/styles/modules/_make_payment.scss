@@ -1,0 +1,122 @@
+.page-make-payment {
+  font-family: "Roboto";
+  label {
+    font-weight: normal;
+  }
+  .outer-box {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 5px 0 #007dff;
+    padding: 32px 20px;
+  }
+  input.form-control {
+    height: 44px;
+  }
+  .form-control:focus {
+    border: 1px solid #9b9b9b;
+    box-shadow: none;
+  }
+  .header-background {
+    height: 120px;
+    background-color: #000000;
+  }
+  .section-form-make-payment {
+    margin: 100px auto;
+    @media only screen and (max-width: 991px) {
+      margin: 50px auto;
+    }
+    .title{
+        h3{
+            margin-bottom: 32px;
+        }
+    }
+    .your-name,
+    .your-order,
+    .your-email,
+    .your-message,
+    .amount {
+      width: 70%;
+      @media only screen and (max-width: 1199px) {
+        width: 80%;
+      }
+      @media only screen and (max-width: 991px) {
+        width: 90%;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    label.error {
+      color: #c10000;
+      margin-top: 5px;
+    }
+    .payment-for {
+      label {
+        display: flex;
+        cursor: pointer;
+        input {
+          cursor: pointer;
+          margin-right: 10px;
+        }
+      }
+    }
+    .payment-type {
+      label {
+        display: flex;
+        cursor: pointer;
+      }
+      .error {
+        display: block;
+        margin-top: 0 !important;
+      }
+
+      [type="radio"] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      img {
+        pointer-events: none;
+        @media only screen and (max-width: 360px) {
+          width: 100%;
+        }
+      }
+      [type="radio"] + img {
+        cursor: pointer;
+      }
+
+      [type="radio"]:checked + img {
+        border: 2px solid red;
+        border-radius: 15px;
+      }
+    }
+    .button-container {
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+      }
+      button {
+        background: #007eff;
+        border: 2px solid #007eff;
+        font-family: "RobotoMedium" !important;
+        font-size: 20px;
+        padding: inherit;
+        padding: 7px 30px;
+        text-align: center;
+        color: $white;
+        border-radius: 25px;
+        &:hover {
+          background: #00a6ff;
+          border-color: #00a6ff;
+        }
+        &:focus {
+          outline: none;
+        }
+        &:active:focus {
+          outline: none;
+        }
+        i{
+            margin-left: 10px;
+        }
+      }
+    }
+  }
+}

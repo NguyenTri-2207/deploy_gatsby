@@ -1,0 +1,64 @@
+.subscribe-us {
+  // background: url("../images/subscribe-us.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .content {
+    width: inherit;
+    padding: 74px 40px 135px;
+    .header {
+      color: $white;
+      h4 {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-family: "RobotoMedium";
+      }
+      h3 {
+        font-size: 26px;
+      }
+    }
+    .form {
+      margin-top: 40px;
+      .form-group {
+        margin-top: 20px;
+        .form-control {
+          max-height: 45px;
+          padding: 15px 32px;
+          font-family: "Robotolight";
+          height: auto;
+        }
+        ::placeholder {
+          color: #777;
+        }
+      }
+      .btn-submit {
+        padding-left: 45px;
+        padding-right: 45px;
+        background-color: transparent;
+        color: $white;
+        border-color: $white;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        &:hover{
+          border-color: $white;
+          background-color: $white;
+          color: #007eff;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .subscribe-us .form-control {
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}

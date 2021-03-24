@@ -1,0 +1,23 @@
+.content-service {
+  .service-title {
+    text-align: center;
+    p {
+      font-family: "Roboto" !important;
+    }
+  }
+}
+.table-nominee-service,
+.table-dissolution-restoration{
+  .table > thead > tr > th{
+    text-align: left;
+  }
+  .table > tbody > tr > td{
+    text-align: left;
+    @media(max-width: 767px){
+      font-size: 15px;
+    }
+  }
+  .scroll-table{
+    margin-bottom: 30px;
+  }
+}

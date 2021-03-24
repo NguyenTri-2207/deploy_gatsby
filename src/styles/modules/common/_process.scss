@@ -1,0 +1,96 @@
+.section-process {
+  margin: 50px 0 90px;
+  @media(max-width: 767px){
+    margin: 50px 0;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  ul {
+    justify-content: space-between;
+    & > li {
+      padding: 0 15px;
+      width: 18%;
+      position: relative;
+      font-family: Roboto;
+      font-size: 20px;
+      @media (max-width: 1199px) {
+        font-size: 18px;
+      }
+      h4{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Roboto;
+      }
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        background: url("../images/arrow-step.png") no-repeat;
+        height: 25px;
+        width: 15px;
+        right: -15px;
+        top: 15px;
+        @media(max-width: 1199px){
+          right: -10px;
+        }
+      }
+      &:last-of-type {
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .section-process {
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-process {
+    margin-bottom: 25px;
+    h2{
+      margin-bottom: 10px;
+    }
+    ul {
+      text-align: center;
+      & > li {
+        width: 100%;
+        padding: 20px 20px 30px;
+        &:after {
+          right: auto;
+          top: auto;
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+.country{
+  .section-process ul li{
+    width: 24%;
+    @media(max-width: 767px){
+      width: 100%;
+    }
+  }
+  .section-process ul > li:after{
+    right: -5px;
+  }
+}
+.country-mauritius-page{
+  .section-process ul li{
+    width: 20%;
+    @media(max-width: 767px){
+      width: 100%;
+    }
+  }
+  .section-process ul > li:after{
+    right: 5px;
+  }
+}

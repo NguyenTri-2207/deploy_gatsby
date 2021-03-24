@@ -1,0 +1,131 @@
+.Whitelist-page{
+	.navbar-fixed-top{
+		.navbar-logo{
+		img{
+			&.logo-text{
+			display: none;
+			}
+			&.logo-text-2{
+			display: inline-block;
+			}
+		}
+		}
+		ul.navbar-item{
+		li a{
+			color: #000;
+		}
+		li.active-item{
+			a.main{
+			color: #00a6ff;
+			}
+		}
+		}
+		.set-up-now{
+		button.setupnow{
+			background-color: #007eff;
+			color: #ffffff;
+			border: 2px solid #007eff;
+			&:hover{
+			background-color: #00a6ff;
+			border: 2px solid #00a6ff;
+			}
+		}
+		}
+	}
+	.banner-with-title{
+		height: 300px;
+		@media(max-width: 767px){
+		height: 300px;
+		}
+		.container{
+			padding-top:105px;
+			h1{
+				color: #000;
+			}
+		}
+	}
+	.breadcrumb-container{
+		background: #fff;
+	}
+	.breadcrumb-custom{
+		background: #fff;
+		border-bottom: 1px solid #ccc;
+		li, li a, li .char{
+		color: #000;
+		}
+	}	
+	section.section-whitelist{
+		.entry-content{
+			padding: 45px 15px;
+			#ez-toc-container {
+				border: 1px solid #aaa;
+				margin-bottom: 1em;
+				max-width: 550px;
+				border-radius: 10px;
+				.ez-toc-title-container {
+					position: relative;
+					p.ez-toc-title {
+						background: #f1f7ff;
+						padding: 10px 30px;
+						border-top-left-radius: 10px;
+						border-top-right-radius: 10px;
+						font-weight: 700;
+					}
+					span{
+						font-size: 16px;
+						font-family: Roboto;
+						a{
+							color: #007eff;
+						}
+					}
+				}
+				nav{
+					ul{
+						list-style: none;
+						li{
+							margin-bottom: 8px;
+							a{
+								color: #007eff;
+							}
+						}
+					}
+				}
+			}
+			.content{
+				h2{
+					color: #333;
+					margin-top: 12px;
+					margin-bottom: 22px;
+					font-size: 22px;
+					&:before{
+						display: block;
+						content: " ";
+						height: 90px;
+						margin: -50px 0 0;
+					}
+				}
+				ol{
+					list-style: decimal;
+					padding-left: 40px;
+					li{
+						font-size: 16px;
+						span.list{
+							font-weight: 700;
+							font-style: italic;
+						}
+						span.list-pec{
+							font-weight: 700;
+						}
+					}
+				}
+				img{
+					width: 100%;
+					height: 100%;
+					padding: 20px 0px;
+				}
+			}
+		}
+		
+	}
+}
+

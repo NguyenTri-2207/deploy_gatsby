@@ -1,0 +1,36 @@
+@mixin block-shadow {
+	box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.2);
+  }
+  
+.related-post-container {
+	margin-bottom: 32px !important;
+	margin-top: 20px;
+	div {
+	  padding: 6px 30px;
+	  margin-bottom: 10px;
+	}
+	.header {
+	  background-color: $blue;
+	  h3 {
+		font-size: 20px;
+		color: $white;
+		font-family: "RobotoBold";
+	  }
+	}
+	.block-post {
+	  @include block-shadow();
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  .time-read {
+		width: fit-content;
+		padding: 3px 10px;
+		background-color: $blue;
+		color: $white;
+		font-size: 11px;
+	  }
+	  .content{
+		font-family: "RobotoLight";
+		color: #333333;
+	  }
+	}
+  }

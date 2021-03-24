@@ -1,0 +1,444 @@
+.section-banner-company-formation {
+  background: url("/images/bg-service/company-formation.jpg") no-repeat;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+
+  .see-pricing {
+    &:focus {
+      color: #00a6ff;
+    }
+    &:hover {
+      color: #00a6ff;
+      i {
+        -webkit-animation: sdb05 1.3s infinite;
+        animation: sdb05 1.3s infinite;
+        @-webkit-keyframes sdb05 {
+          0% {
+            -webkit-transform: translate(0, 0);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            -webkit-transform: translate(0, 5px);
+            opacity: 0;
+          }
+        }
+        @keyframes sdb05 {
+          0% {
+            transform: translate(0, 0);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            transform: translate(0, 5px);
+            opacity: 0;
+          }
+        }
+      }
+    }
+    display: block;
+    color: #00a6ff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    span {
+      font-size: 20px;
+    }
+    i {
+      margin: 0 0 0 0.5rem;
+      font-size: 18px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+  .btn-comparisontable{
+    border-radius: 25px;
+    background: #ff9e2a;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    padding: 6px 25px;
+    font-family: "RobotoBold";
+    outline: none;
+    border: 1px solid #ff9e2a;
+    margin-bottom: 20px;
+    display: inline-block;
+    &:hover {
+      background: #ffb400;
+    }
+    @media (max-width: 767px) {
+      margin-left: 0;
+      position: relative;
+      margin: 0 auto 20px;
+      // font-size: 18px;
+      letter-spacing: normal;
+      font-family: "Roboto";
+    }
+  }
+  .content-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+    @media (max-width: 991px) {
+      padding-top: 0;
+    }
+  }
+
+  .block-content {
+    color: #fff;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    h1 {
+      // margin-top: 60px;
+      margin-top: 90px;
+      font-size: 45px;
+      font-family: "Noto Serif", serif;
+      font-weight: 600;
+      margin-bottom: 45px;
+      @media (max-width: 767px) {
+        font-size: 32px;
+        margin-bottom: 15px;
+        margin-top: 40px;
+      }
+      @media (max-width: 500px) {
+        font-size: 26px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .form-search {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+      justify-content: flex-start;
+      width: 50%;
+    }
+    @media (max-width: 650px) {
+      width: 60%;
+    }
+    @media (max-width: 500px) {
+      width: 70%;
+    }
+    @media (max-width: 360px) {
+      width: 90%;
+    }
+    p {
+      color: #fff;
+      margin-right: 15px;
+      margin-bottom: 0;
+      @media (max-width: 767px) {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+    }
+    .dropdown.bootstrap-select.form-control.bs3.open {
+      border-bottom-left-radius: 0;
+      .dropdown-menu.open {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        @media (max-width: 991px) {
+          min-width: 100% !important;
+          width: 216px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        border-bottom-right-radius: 0;
+      }
+    }
+    .form-nation {
+      min-width: 250px;
+      border: 2px solid #fff;
+
+      .dropdown.bootstrap-select.form-control {
+        background-color: transparent;
+      }
+      .btn .caret {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #fff;
+      }
+      .bs-searchbox {
+        display: none;
+      }
+      .filter-option {
+        color: #fff;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 360px) {
+        margin-bottom: 5px;
+      }
+    }
+    // .btn-apply {
+    //   border-radius: 25px;
+    //   background: #ff9e2a;
+    //   color: #fff;
+    //   font-size: 18px;
+    //   letter-spacing: 1.3px;
+    //   padding: 6px 25px;
+    //   font-family: "RobotoBold";
+    //   outline: none;
+    //   border: 1px solid #ff9e2a;
+    //   margin-left: 30px;
+    //   &:hover {
+    //     background: #ffb400;
+    //   }
+    //   @media (max-width: 767px) {
+    //     margin-left: 0;
+    //     position: relative;
+    //     width: 80%;
+    //     margin: 0 auto;
+    //     font-family: "Roboto";
+    //   }
+    // }
+    .form-control {
+      display: inline-block;
+      vertical-align: middle;
+      &:focus {
+        outline: none !important;
+        box-shadow: unset;
+      }
+    }
+    @media (max-width: 767px) {
+      .bootstrap-select .form-control {
+        border-radius: 25px;
+      }
+    }
+    .bootstrap-select.form-control {
+      border-radius: 0;
+      @media (max-width: 767px) {
+        border-radius: 25px;
+      }
+      @media (max-width: 360px) {
+        height: 30px;
+      }
+    }
+    .bootstrap-select .dropdown-menu {
+      border-radius: 25px;
+      top: 94%;
+      box-shadow: none;
+    }
+    .bootstrap-select > .dropdown-toggle {
+      background: transparent;
+      border: none;
+      @media (max-width: 360px) {
+        padding: 5px 25px;
+      }
+      border-radius: 0;
+      &:focus {
+        outline: none !important;
+        background: transparent;
+      }
+    }
+  }
+
+  .detail {
+    max-width: 800px;
+    margin-bottom: 45px;
+    .description {
+      display: block;
+      font-size: 18px;
+    }
+    color: #fff;
+
+    #trustpilot_score {
+      border-right: 1px solid #fff;
+      text-align: right;
+      p{
+        margin-right: 10px;
+      }
+    }
+    .label {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    .reviewer {
+      margin-bottom: 5px;
+    }
+    .star {
+      width: 150px;
+      height: 29px;
+    }
+    .logo {
+      width: 150px;
+      height: 37px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 5px;
+    }
+    li {
+      position: relative;
+      white-space: nowrap;
+      margin-bottom: 15px;
+    }
+    i {
+      color: #7bde45;
+      margin-right: 5px;
+    }
+    @media (max-width: 767px) {
+      #trustpilot_score,
+      .description {
+        border: none;
+        // width: calc(100% - 15px);
+        margin-bottom: 8px;
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        flex-direction: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      li {
+        margin-bottom: 10px;
+        white-space: normal;
+        margin-bottom: 5px;
+        margin-left: 25px;
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 500px) {
+      margin-top: 12px;
+    }
+  }
+  @media (max-width: 767px){
+    .detail{
+      margin-bottom: 20px;
+      @media(max-width: 360px){
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.banner-services{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 0 0 0;
+  @media screen and (max-width: 425px){
+    padding-top: 100px;
+  }
+  .banner-service{
+      &__container{
+          &-content{
+              text-align: center;
+              h1.headline{
+                  font-family: "Noto Serif",serif;
+                  font-weight: 600;
+                  font-size: 4.5rem;
+                  color: #ffffff;
+                  @media screen and (max-width: 425px){
+                    font-size: 3rem;
+                  }
+              }
+              p.description{
+                  color: #ffffff;
+                  font-size: 1.8rem;
+                  @media screen and (max-width: 425px){
+                    font-size: 1.6rem;
+                  }
+              }
+          }
+      }
+  }
+}
+.banner-new-tool{
+  width: 750px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: rgba(0,0,0,0.5);
+  position: relative;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-top: 50px;
+  }
+  &__container{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  &__content{
+      width: 100%;
+      padding: 30px 0 30px 30px;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        padding: 30px 0;
+      }
+      h3.headline{
+          font-family: "Noto Serif",serif;
+          font-weight: 600;
+          color: #ffffff;
+          margin: 0;
+          margin-bottom: 2rem;
+      }
+      p.description{
+          color: #ffffff;
+          margin: 0;
+      }
+      &-cta{
+          margin-top: 2rem;
+          a.btn{
+              font-family: "RobotoBold";
+              background-color: #007eff;
+              outline: none;
+              border: 0;
+              text-transform: uppercase;
+              padding: 6px 30px;
+              border-radius: 0;
+              &:focus, &:hover{
+                  background-color: #00a6ff;
+              }
+          }
+      }
+  }
+  &__images{
+      position: absolute;
+      right: -40px;
+      bottom: 0;
+      @media screen and (max-width: 768px) {
+        position: initial;
+        right: 0;
+        width: 100%;
+        text-align: center;
+      }
+      @media screen and (max-width: 425px) {
+        display: none;
+      }
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+  }
+}

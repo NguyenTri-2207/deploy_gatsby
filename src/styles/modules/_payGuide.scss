@@ -1,0 +1,124 @@
+.payment-guideline{
+	padding: 70px 0;
+	@media(max-width: 767px){
+	  padding: 50px 0;
+	}
+	h2{
+		margin: 0 0 30px;
+	}
+	.cl-md-7{
+		width: 66.6666666667%;
+		padding: 0 15px;
+		position: relative;
+		@media(max-width: 767px){
+			width: 100%;
+		}
+	}
+	.cl-md-5{
+		width: 33.3333333333%;
+		padding: 0 15px;
+		position: relative;
+		@media(max-width: 767px){
+			width: 100%;
+		}
+	}
+	.pay-bank .cl-md-7,.cl-md-5{
+		padding: 0 10px;
+		@media(max-width: 991px){
+			padding: 0 15px;
+		}
+	}
+	.content-left{
+		.nav-tabs{
+			border: 0;
+			& > li{
+				background: #6DAB3C;
+				margin-right: 2px;
+				border-radius: 5px;
+				a{
+					color: #fff;
+					margin-right: 0;
+					border-radius: 5px;
+					padding: 15px;
+				}
+				@media(max-width: 991px){
+					margin-bottom: 5px;
+				}
+				@media(max-width: 500px){
+					width: 100%;
+				}
+			}
+			li.active{
+				background: #f8f8f8;
+				border: 1px solid #f0f0f0;
+				&:hover{
+					background: #f8f8f8;
+				}
+			}
+			li:hover{
+				background: #5f9434;
+			}
+		}
+		.nav-tabs>li>a:hover{
+			background: #5f9434;
+		}
+		.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus,
+		.nav-tabs>li.active>a:hover
+		{
+			color: #000;
+			background: transparent;
+    		border: 0;
+		}
+		ul,ol{
+			margin-bottom: 30px;
+			li{
+				font-size: 16px;
+				font-family: Roboto;
+			}
+		}
+		ul{
+			list-style: disc;
+		}
+		ol{
+			list-style: decimal;
+		}
+	}
+	h4{
+		margin: 20px 0;
+		font-family: Roboto;
+	}
+	.tab-pane ul{
+		list-style: disc;
+		margin-bottom: 30px;
+	}
+	.content-right{
+		padding-top: 70px;
+		@media(max-width: 767px){
+			padding-top: 30px;
+		}
+		img{
+			max-width: 100%;
+			object-fit: cover;
+		}
+	}
+	.paypal{
+		.cl-md-7{
+			padding-left: 0;
+			@media(max-width: 767px){
+				padding-left: 15px;
+			}
+		}
+	}
+	.mgr-10{
+		margin-right: 10px;
+	}
+	.contact{
+		margin-top: 50px;
+		.pl-40{
+			padding-left: 0px;
+			@media(max-width: 767px){
+				padding: 0 15px;
+			}
+		}
+	}
+}

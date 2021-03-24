@@ -1,0 +1,81 @@
+.order-acc-service-page {
+	margin-top: 80px;
+	.order-acc-service {
+		min-height: calc(100vh - 60px - 75px);
+	}
+
+	.title-page {
+		text-align: center;
+		margin-top: 40px;
+		h1 {
+			font-size: 45px;
+			font-family: "RobotoLight";
+			margin-bottom: 40px;
+			@media (max-width: 767px) {
+				font-size: 36px;
+			}
+		}
+	}
+
+	#choose-package-accounting {
+		h3 {
+			font-family: "RobotoLight";
+			@media (max-width: 767px) {
+				font-size: 20px;
+			}
+		}
+		@media (max-width: 767px) {
+			.button-container {
+				margin: 20px 15px 40px;
+			}
+		}
+		.button-container {
+			margin: 20px 100px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		.service_container {
+			margin-top: 20px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		.button-back {
+			a {
+				color: #007dff;
+				font-size: 16px;
+				font-family: "Roboto";
+			}
+		}
+		.button-next-step {
+			margin: 30px 15px;
+			@media (max-width: 767px) {
+				margin: 0;
+			}
+			@media (max-width: 340px) {
+				padding: 10px 20px !important;
+			}
+		}
+		#show-option {
+			display: block;
+			margin: 0 auto;
+			font-size: 16px;
+			border-radius: 50px;
+			padding: 15px 45px;
+			text-align: center;
+			background: #007dff;
+			color: #fff;
+			text-decoration: none;
+			border: 1px solid #007dff;
+			&:focus {
+				outline: none;
+			}
+			margin-bottom: 10px;
+		}
+		#show-option.no {
+			padding: 15px 126px;
+		}
+	}
+}

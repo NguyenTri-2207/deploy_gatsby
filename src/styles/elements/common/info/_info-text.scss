@@ -1,0 +1,46 @@
+.info-text {
+	position: relative;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	.img-logo{
+		display: none;
+	}
+	.info-text__content {
+		width: 70%;
+		margin: auto;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 40%;
+			// height: 100%;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			border-bottom: 1px solid #333333;
+		}
+	}
+
+	&.line {
+		.info-text__content {
+			padding-bottom: 10px;
+		}
+
+	}
+
+	@media screen and (max-width: 767px) {
+		margin: 50px auto;
+
+		.info-text__content {
+			width: 85%;
+		}
+	}
+}
+.about-us-page{
+	.info-text{
+		.img-logo{
+			display: block;
+		}
+	}
+}

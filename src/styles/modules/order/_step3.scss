@@ -1,0 +1,277 @@
+.order-step3-page{
+  margin-top: 80px;
+  .order-step3 {
+    min-height: calc(100vh - 60px - 75px);
+  }
+
+  .title-page {
+    text-align: center;
+    margin-top: 40px;
+    h1 {
+      font-size: 45px;
+      font-family: "RobotoLight";
+      margin-bottom: 40px;
+      @media(max-width: 767px){
+        font-size: 36px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      font-family: "RobotoLight";
+      overflow: hidden;
+
+      span {
+        position: relative;
+
+        &:before,
+        &:after {
+          position: absolute;
+          content: "";
+          display: inline-block;
+          height: 1px;
+          width: 100%;
+          border-top: 1px dotted #989898;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:before {
+          right: 100%;
+          margin-right: 25px;
+        }
+
+        &:after {
+          left: 100%;
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+  .content {
+    h3 {
+      font-family: "RobotoLight";
+      @media(max-width: 767px){
+        font-size: 20px;
+      }
+    }
+    .show-option-details-container,
+    #button-form-step3,
+    #sub_title {
+      display: none;
+    }
+
+    .button-container,
+    .option-container {
+      margin: 20px 100px;
+    }
+    @media (max-width: 767px) {
+      .button-container {
+        margin: 20px 15px 40px;
+      }
+    }
+    @media (max-width: 550px) {
+      .option-container {
+        margin: 20px 20px 40px;
+      }
+    }
+    .option-container {
+      .row {
+        margin-bottom: 15px;
+      }
+      .item-container {
+        padding: 10px 20px;
+      }
+      .item-box {
+        border: 1px solid #b4afaf;
+        padding: 10px 20px;
+        border-radius: 10px;
+        align-items: center;
+        .checkbox-item{
+          width: 70%;
+        }
+      }
+      .quantity-item {
+        display: none;
+        width: 30%;
+        text-align: right;
+        .quantity_with_id{
+          padding: 2px 7px;
+          border: 1px solid #9b9b9b;
+          margin-right: 5px;
+        }
+        .icon-line{
+          font-size: 16px;
+          margin: 0 5px 0 8px;
+          font-weight: 900;
+        }
+        button{
+          background: transparent;
+          border: none;
+          outline: none;
+          margin-top: 8px;
+        }
+        .btn-minus{
+          margin-right: 10px;
+        }
+      }
+      label {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: normal;
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+        cursor: pointer;
+      }
+      .detail-item p{
+        display: inline-block;
+        margin: 0 0 0 30px;
+      }
+      input[type="checkbox"] {
+        position: absolute; // take it out of document flow
+        opacity: 0; // hide it
+        & + label {
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+        }
+        // Box.
+        & + label:before {
+          content: "";
+          display: inline-block;
+          vertical-align: text-top;
+          width: 20px;
+          height: 20px;
+          background: white;
+          border: 1px solid #007eff;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        // Box hover
+        // &:hover + label:before {
+        //   background: #007eff;
+        // }
+
+        // Box focus
+        // &:focus + label:before {
+        //   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+        // }
+
+        // Box checked
+        &:checked + label:before {
+          background: #007eff;
+        }
+
+        // Disabled state label.
+        &:disabled + label {
+          color: #b8b8b8;
+          cursor: auto;
+        }
+
+        // Disabled box.
+        &:disabled + label:before {
+          box-shadow: none;
+          background: #ddd;
+        }
+
+        // Checkmark. Could be replaced with an image
+        &:checked + label:after {
+          content: "";
+          position: absolute;
+          left: 5px;
+          top: 9px;
+          background: #007eff;
+          // width: 2px;
+          // height: 2px;
+          // box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white,
+          //   4px -8px 0 white;
+          // transform: rotate(45deg);
+        }
+      }
+      .show-option-details-container {
+        .show-option-list {
+          margin: 10px;
+        }
+      }
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .button-back {
+      a {
+        color: #007dff;
+        font-size: 16px;
+        font-family: "Roboto";
+      }
+    }
+    .button-next-step {
+      margin: 30px 15px;
+      @media (max-width: 767px) {
+        margin: 0;
+      }
+      @media (max-width: 340px) {
+        padding: 10px 20px !important;
+      }
+      .btn-next-step {
+        i {
+          margin-left: 10px;
+        }
+        background: #007dff;
+        font-family: "RobotoBold";
+
+        &:focus {
+          outline: none;
+        }
+
+        display: block;
+        margin-left: auto;
+        font-size: 22px;
+        padding: 12px 50px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        border: 1px solid #007dff;
+      }
+    }
+    #show-option {
+      display: block;
+      margin: 0 auto;
+      font-size: 16px;
+      border-radius: 50px;
+      padding: 15px 30px;
+      text-align: center;
+      background: #007dff;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid #007dff;
+      &:focus {
+        outline: none;
+      }
+    }
+    #no-later {
+      margin-top: 10px;
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      // @media (max-width: 767px) {
+      //   font-size: 14px;
+      // }
+    }
+    #errorRadioStep3,
+    #errorCheckboxStep3,
+    #showErrorOrderService {
+      color: red;
+      padding-left: 5px;
+    }
+  }
+}

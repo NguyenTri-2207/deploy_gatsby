@@ -1,0 +1,65 @@
+@mixin button-mix() {
+  border: 2px solid #007eff;
+  font-family: "RobotoMedium" !important;
+  padding: inherit;
+  height: 45px;
+}
+.button-bg {
+  text-align: center;
+  margin: 30px auto;
+  .button {
+    text-align: center;
+    width: 320px;
+    &:focus {
+      outline: none;
+    }
+    &:active:focus {
+      outline: none;
+    }
+  }
+  &.button-type-blue {
+    .button {
+      background: #007eff;
+      color: $white;
+      @include button-mix();
+      &:hover {
+        background: #00a6ff;
+        border-color: #00a6ff;
+      }
+    }
+  }
+  &.button-type-white {
+    .button {
+      background: $white !important;
+      color: #007eff;
+      outline: none;
+      @include button-mix();
+      &:hover {
+        background: #007eff !important;
+        border-color: #007eff;
+        color: $white;
+      }
+    }
+  }
+  &.button-type-transparent {
+    .button {
+      background: transparent;
+      border: 2px solid #ffffff;
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .button-bg {
+    margin-bottom: 0 !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .button-bg {
+    &.button-type-blue,
+    &.button-type-white {
+      .button {
+        width: 240px;
+      }
+    }
+  }
+}

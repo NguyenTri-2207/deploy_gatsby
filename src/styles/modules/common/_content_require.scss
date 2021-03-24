@@ -1,0 +1,46 @@
+.require-document-horizontal {
+  padding: 50px 0;
+  h2 {
+    margin: 0;
+    padding-bottom: 45px;
+  }
+  .content {
+    padding-left: 15px;
+    max-width: 550px;
+    ul {
+      margin-left: 40px;
+      list-style-type: disc;
+      li {
+        font-size: 16px;
+        font-family: "Roboto";
+        @media(max-width: 767px){
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .btn-container {
+    .button {
+      padding: 10px 56px;
+      max-width: 320px;
+      font-family: "RobotoBold";
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .require-document-horizontal {
+    padding: 25px 0;
+    .content-text {
+      display: block;
+    }
+    h2 {
+      padding-bottom: 15px;
+      text-align: center;
+    }
+    ol {
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}

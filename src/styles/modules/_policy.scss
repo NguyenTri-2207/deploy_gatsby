@@ -1,0 +1,89 @@
+// style css layout policy
+.section-policy{
+	padding: 70px 0;
+	@media(max-width: 767px){
+	  padding: 50px 0;
+	}
+	h2{
+	  margin: 0 0 30px;
+	}
+	h3,h4,h5{
+	  font-family: RobotoBold;
+  
+	}
+	h3{
+	  margin-top: 25px;
+	}
+	h4{
+	  font-size: 18px;
+	}
+	h5{
+	  font-size: 14px;
+	}
+	.fs-18{
+	  font-size: 18px;
+	}
+	.mgr-10{
+	  margin-right: 10px;
+	}
+	.mgt-10{
+	  margin-top: 20px;
+	}
+	a{
+		color: #007eff;
+	}
+	ul,ol{
+		font-size: 16px;
+		font-family: Roboto;
+		margin-bottom: 30px;
+	}
+	ul{
+		list-style: disc;
+	}
+	ol{
+		list-style: decimal;
+	}
+	.table-policy{
+		width: 65%;
+		max-width: 100%;
+		margin: 20px auto;
+		@media(max-width: 767px){
+			width: 100%;
+			margin: auto;
+		}
+		// tr > td,th{
+		// 	border-top: 1px solid #ddd;
+		// }
+		tbody tr{
+			&:nth-child(even){
+				background: #f6f6f6;
+			}
+			&:last-of-type{
+				border-bottom: 1px solid #333;
+			}
+		}
+	}
+	// .jurisdictions{
+	// 	margin-left: 20px;
+	// }
+	@media(max-width: 767px){
+		h3{
+			font-size: 18px;
+		}
+		h4{
+			font-size: 16px;
+		}
+	}
+	.fatca .pl-40{
+		padding-left: 20px;
+	}
+  }
+  .list-style{
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 10px 0 0 !important;
+	li{
+	  margin-bottom: 10px;
+	}
+  }

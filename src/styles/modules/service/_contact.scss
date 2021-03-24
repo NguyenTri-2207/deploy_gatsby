@@ -1,0 +1,107 @@
+.transfer-agent-page {
+  .form-contact {
+    background: url("/images/bg-contact2.jpg") no-repeat;
+    position: relative;
+    background-position: top center;
+    background-size: 1107px 790px;
+    .container {
+      max-width: 950px;
+      .header {
+        max-width: 850px;
+        margin: 0 auto 30px;
+        h2 {
+          margin: 25px 0;
+        }
+      }
+    }
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+}
+.form-contact {
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+    .placeholder {
+      position: absolute;
+      top: 10px;
+      left: 12px;
+      color: #777;
+      display: none;
+      label {
+        font-family: "Roboto";
+        font-size: 14px;
+      }
+    }
+    .filter-option-inner-inner,
+    label {
+      font-weight: normal;
+      color: #777;
+      font-family: "Roboto";
+    }
+    ::placeholder {
+      color: #777;
+      font-size: 14px;
+      font-family: "Roboto";
+    }
+    .star {
+      color: red;
+    }
+    label.error {
+      color: red;
+      margin-top: 2px;
+      position: absolute;
+      margin-left: 10px;
+    }
+    .message {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 6px 12px;
+      border: 1px solid #9b9b9b;
+      border-radius: 4px;
+    }
+  }
+  .form-subject,
+  .form-nation {
+    .btn-default {
+      color: #b1b1b1;
+      &:hover {
+        color: #b1b1b1;
+        background-color: #fff;
+        border-color: #9b9b9b;
+      }
+      .caret {
+        color: $footer;
+      }
+    }
+  }
+  button.btn.dropdown-toggle.btn-default.bs-placeholder {
+    font-size: 14px;
+    font-family: "Roboto";
+  }
+  .bootstrap-select > .dropdown-toggle:focus {
+    outline: none !important;
+  }
+  #capcha-error {
+    color: red;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .form-contact {
+    .form > div {
+      padding-right: 0;
+    }
+    .content-right h3 {
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .form-contact {
+    .content-right a {
+      font-size: 12px;
+    }
+  }
+}

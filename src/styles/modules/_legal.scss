@@ -1,0 +1,50 @@
+// style css layout policy
+.section-legal{
+	padding: 70px 0;
+	.entry-content ul, .entry-content ol{
+	  padding-inline-start: 60px;
+	}
+	@media(max-width: 767px){
+	  padding: 50px 0;
+	}
+	ol{
+		list-style: lower-alpha;
+	}
+	h2{
+	  margin: 0 0 30px;
+	}
+	h3,h4,h5{
+	  font-family: RobotoBold;
+  
+	}
+	h3{
+	  margin-top: 25px;
+	}
+	h4{
+	  font-size: 18px;
+	}
+	h5{
+	  font-size: 14px;
+	}
+	.fw-400{
+		font-weight: 400;
+	}
+	.fs-18{
+	  font-size: 18px;
+	}
+	.mgr-10{
+	  margin-right: 10px;
+	}
+	.mgt-10{
+	  margin-top: 20px;
+	}
+  }
+  .list-style{
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 10px 0 0 !important;
+	li{
+	  margin-bottom: 10px;
+	}
+  }

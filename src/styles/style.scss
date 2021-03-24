@@ -1,0 +1,104 @@
+/*
+    Project: base_html
+    Version: 1.6.2
+    Developed by: diaryforlife
+    Website: http://thanhtrungdev.tk
+*/
+
+/*
+    TABLE OF CONTENT
+        1. RESET AND TYPHOGRAPHY
+        2. ELEMENTS
+        3. COMPONENTS
+        4. MODULES
+        5. HELPERS
+        6. CUSTOM
+
+*/
+
+// @import "vendor/bourbon/bourbon";
+@import "utils/_mixin";
+// @import "vendor/masonry_grid";
+// @import "vendor/media_query";
+
+@import "utils/_variable";
+@import "utils/_breakpoint";
+
+/*1. RESET AND TYPHOGRAPHY */
+// @import "base/reset";
+// @import "base/typhography";
+
+/*2. ELEMENTS */
+// @import "elements/grid";
+// @import "elements/list";
+// @import "elements/button";
+// @import "elements/form";
+// @import "elements/post";
+// @import "elements/pagination";
+// @import "elements/breadcrumb";
+// @import "elements/block";
+// @import "elements/loader";
+
+/*3. COMPONENTS */
+// @import "components/forms";
+// @import "components/section";
+
+/*4. MODULES */
+@import "modules/_common";
+// @import 'modules/_company-formation';
+@import "modules/_contact";
+@import "modules/_header";
+@import "modules/_footer";
+@import "modules/_navTop";
+@import "modules/_font";
+@import "modules/_home";
+@import "modules/_resource";
+@import "modules/_country";
+@import "modules/blog/_style";
+@import "modules/service/_style";
+@import "modules/common/_common_style";
+@import "elements/faqs";
+@import "elements/common/article/_article-big";
+@import "elements/common/article/_article-list";
+@import "elements/common/article/_article-small";
+@import "elements/common/banner/_banner-with-title";
+@import "elements/common/dropdown/_dropdown-filter";
+// @import "elements/common/form/form-subcribe";
+@import "elements/common/heading/_heading-loadmore";
+@import "elements/common/info/_info-text";
+@import "elements/common/info/_info-image";
+@import "elements/common/info/_info-value";
+@import "elements/common/input/_input-search";
+@import "elements/common/slider/_slider-article";
+@import "elements/common/slider/_slider-logo";
+@import "modules/common/_slide_article";
+@import "modules/_policy";
+@import "modules/_legal";
+@import "modules/_payGuide";
+@import "modules/_make_payment";
+@import "modules/order";
+@import "modules/_paypal_execute";
+@import "modules/_failed_payment";
+@import "modules/_faqs";
+@import "modules/_footer-faqs";
+@import "modules/_layout-order";
+@import "modules/_order_success";
+@import "modules/_name_generator";
+@import "modules/order/_style";
+@import "modules/_pending_payment";
+@import "modules/_about_us";
+@import "modules/_404";
+@import "modules/_partner-with";
+@import "modules/_whitelist-guide";
+@import "modules/_chatbot";
+@import "modules/_economic_substance";
+@import "modules/_banking_tool";
+@import "modules/_entity-name-check";
+
+/*5. HELPERS */
+// @import "elements/helpers";
+/*6. CUSTOM*/
+@import "page/_resources";
+@import "page/_resource-section";
+@import "page/_check-name";
+@import "page/_faqs-articles";

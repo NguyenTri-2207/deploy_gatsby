@@ -1,0 +1,32 @@
+.breadcrumb-container {
+  background: #333333;
+}
+.breadcrumb-custom {
+  background: #333333;
+  padding: 9px 0;
+  margin-bottom: 0;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  .char {
+    color: $white;
+    padding: 0 15px;
+  }
+  li {
+    display: inline-block;
+    color: $white;
+    a {
+      font-size: 14px;
+      font-family: Roboto;
+      &:hover {
+        color: #007dff;
+      }
+    }
+  }
+}
+// .breadcrumb > li + li:before {
+//   padding: 0px 15px;
+// }
+// .breadcrumb > .active {
+//   color: #fff;
+// }

@@ -1,0 +1,60 @@
+.form-subcribe {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-image: url("../images/bg-why-choose.png");
+	border-radius: 10px;
+
+	.form-subcribe__title {
+		font-size: 26px;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	.form-subcribe__content {
+		width: 70%;
+		margin: auto;
+
+		input {
+			width: 100%;
+			padding: 14.5px 20px;
+			margin: 30px auto;
+			border-radius: 22.5px;
+			font-size: 14px;
+			line-height: 16px;
+			border: 0;
+			color: #777777;
+		}
+		button {
+			width: 100%;
+			padding: 9.5px 20px;
+			font-size: 20px;
+			line-height: 22px;
+
+			&:hover {
+				background: #ffffff;
+				color: #007eff;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		margin: 50px 10px;
+		padding: 20px 0;
+
+		.form-subcribe__title {
+			margin-top: 0;
+		}
+
+		.form-subcribe__content {
+			width: 90%;
+
+			input {
+				margin: 10px auto;
+			}
+
+			.button-bg {
+				margin: 10px auto;
+			}
+		}
+	}
+}

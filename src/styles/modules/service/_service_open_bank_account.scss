@@ -1,0 +1,49 @@
+.service-open-bank-account {
+  .features {
+    padding-left: 10%;
+    padding-right: 10%;
+    .feature {
+      width: 33.3%;
+      .content {
+        height: 100%;
+        padding: 30px;
+        border-radius: 20px;
+        img {
+          margin-bottom: 25px;
+          width: auto;
+          height: 80px;
+        }
+        a {
+          font-family: "Roboto";
+          font-size: 20px;
+          color: #333333;
+          @media only screen and (max-width: 767px) {
+            font-family: "RobotoMedium";
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .service-title {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-open-bank-account {
+    .features {
+      .feature {
+        width: 50%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .service-open-bank-account {
+    .features {
+      .feature {
+        width: 100%;
+      }
+    }
+  }
+}

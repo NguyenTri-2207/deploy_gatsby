@@ -1,0 +1,182 @@
+#preloaderSpinner.spinner {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#preloaderSpinner.spinner .spinWrap {
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -50px;
+}
+
+#preloaderSpinner.spinner .spinnerImage {
+  margin: 23px 0 0 -30px;
+  background: url("/images/spin_lock.png") no-repeat;
+}
+
+#preloaderSpinner.spinner .loader,
+#preloaderSpinner.spinner .spinnerImage {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#preloaderSpinner.spinner .loader {
+  margin: 0 0 0 -55px;
+  background-color: transparent;
+  -webkit-animation: i 0.7s infinite linear;
+  -o-animation: i 0.7s infinite linear;
+  animation: i 0.7s infinite linear;
+  border-left: 5px solid #cbcbca;
+  border-right: 5px solid #cbcbca;
+  border-bottom: 5px solid #cbcbca;
+  border-top: 5px solid #2380be;
+  border-radius: 100%;
+}
+#preloaderSpinner.spinner .loadingMessage {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 125px;
+  text-align: center;
+  z-index: 100;
+  outline: none;
+}
+
+@-webkit-keyframes i {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes i {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes i {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #preloaderSpinner.spinner .spinWrap {
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-left: -93px;
+    margin-top: -50px;
+  }
+}
+
+/*========= style popup paypal ========*/
+#modal-paypalPayment, #modal-paypal, #modal-paypal1 {
+	background: rgba(0, 0, 0, 0.55);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	// height: 100%;
+	z-index: 2000000001 !important;
+	transition: 0.3s;
+	display: none;
+
+	.modal-popup {
+		max-width: 450px;
+		// height: 600px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		// @media (max-width: 991px) {
+		// 	width: 350px;
+		// 	height: 500px;
+		// }
+		.close {
+			position: absolute;
+			right: 15px;
+			top: 10px;
+			color: #000;
+			opacity: 1;
+			text-shadow: 0 !important;
+			z-index: 99;
+    }
+    .modal-header{
+      .img-logo{
+        width: 70px;
+        margin: -80px auto 0;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.18), 0 2px 2px 0 rgba(0,0,0,.08);
+        padding: 3px;
+      }
+      h3,a{
+        font-family: Roboto;
+        text-align: center;
+        font-weight: 500;
+      }
+      a{
+        color: #333;
+        font-size: 16px;
+        display: block;
+        font-weight: 400;
+      }
+      p{
+        text-align: center;
+      }
+    }
+    .modal-body{
+      padding-top: 20px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+		.modal-content {
+      box-shadow: none;
+      padding: 35px 20px 15px;
+    }
+    #isLoadingPaypal{
+      display: none;
+      text-align: center;
+      i{
+        font-size: 50px;
+      }
+    }
+	}
+}

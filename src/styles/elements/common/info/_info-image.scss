@@ -1,0 +1,45 @@
+.info-image {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+
+	.info-image__content {
+		.info-image__content__item {
+			padding: 0 16px;
+			
+			.wrapper {
+				box-shadow: 0px 0px 18px rgba(119, 119, 119, 0.3);
+
+				.info-image__content__item__title {
+					padding-top: 30px;
+					color: #007eff;
+				}
+	
+				.info-image__content__item__content {
+					margin: 0 auto 30px auto;
+					width: 85%;
+					font-size: 16px;
+					line-height: 20px;
+					height: 120px;
+					overflow: hidden;
+					> a{
+						color: #00a6ff;
+						text-decoration: underline;
+					}
+				}
+
+				.info-image__content__item__image {
+					width: 100%;
+					height: 235px;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		margin: 50px auto;
+	}
+}

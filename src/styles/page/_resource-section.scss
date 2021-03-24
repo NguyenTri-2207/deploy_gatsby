@@ -1,0 +1,135 @@
+.resource-section-main {
+	margin-top: 64px;
+	margin-bottom: 64px;
+
+	.subscribe-us {
+		margin-top: 0;
+		height: 524px;
+		form {
+			label {
+				font-weight: 500;
+				color: #ea6666;
+			}
+		}
+	}
+
+	.btn-loadmore {
+		float: none;
+		margin: auto;
+		padding: 0 0 0 30px;
+
+		button {
+			width: 100%;
+			max-width: 5000px;
+		}
+	}
+
+	.resource-section-main__article {
+		padding: 0;
+	}
+
+	.resource-section-main__heading {
+		#tags {
+			display: none;
+			flex-wrap: wrap;
+			div {
+				display: block;
+				position: relative;
+				padding-left: 10px;
+				margin-bottom: 12px;
+				cursor: pointer;
+				font-size: 12px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				input {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+				}
+				label {
+					border: 2px solid #eee;
+					border-radius: 35px;
+					background-color: #eee;
+					padding: 6px;
+					position: relative;
+					padding-right: 35px;
+				}
+				span.close {
+					position: absolute;
+					right: 5px;
+					top: 5px;
+					-webkit-filter: grayscale(100%);
+					filter: grayscale(100%);
+					border-radius: 50%;
+					width: 22px;
+					height: 22px;
+					border: 1px solid #3a3939;
+					text-align: center;
+					background: #3a3939;
+					font-size: 15px;
+					color: #fff;
+					opacity: 0.7;
+				}
+			}
+			// div:hover input ~ .label {
+			// 	background-color: #ccc;
+			// }
+			div label.active ~ span.close {
+				background-color: #fff;
+				border: 1px solid #fff;
+				color:#111;
+				font-size: 15px;
+			}
+			.div input:checked ~ .label:after {
+				display: block;
+			}
+			label {
+				cursor: pointer;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			label.active {
+				border: 2px solid #007eff;
+				background-color: #007eff;
+				color: #fff;
+			}
+			// .div .label:after {
+			// 	left: 9px;
+			// 	top: 5px;
+			// 	width: 5px;
+			// 	height: 10px;
+			// 	border: solid white;
+			// 	border-width: 0 3px 3px 0;
+			// 	-webkit-transform: rotate(45deg);
+			// 	-ms-transform: rotate(45deg);
+			// 	transform: rotate(45deg);
+			// }
+		}
+	}
+	@media screen and (max-width: 767px) {
+		margin-top: 50px;
+		margin-bottom: 50px;
+
+		.article-list {
+			display: none;
+		}
+
+		.input-search,
+		.article-small,
+		.subcribe-us {
+			margin-bottom: 20px;
+		}
+
+		.dropdown-filter {
+			margin-top: 20px;
+		}
+
+		.btn-loadmore {
+			width: 100%;
+		}
+	}
+}

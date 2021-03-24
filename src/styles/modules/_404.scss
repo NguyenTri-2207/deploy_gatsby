@@ -1,0 +1,137 @@
+.p404-page {
+  .navbar {
+    a img {
+      &.logo-text {
+        display: none !important;
+      }
+      &.logo-text-2 {
+        display: inline-block !important;
+      }
+    }
+    .menu {
+      .navbar-item li > a {
+        color: #333;
+      }
+      .setupnow {
+        border: 2px solid #333;
+        color: #333;
+        &:hover {
+          border: 2px solid #007eff;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .container-page {
+    background: url("../images/bg-404.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      .content-404 img {
+        width: 400px;
+      }
+      .content-des {
+        width: 80%;
+      }
+      .button-bg {
+        bottom: 30%;
+      }
+    }
+  }
+  .background-header {
+    height: 120px;
+    // background-color: #000;
+  }
+  .content-404 {
+    width: 100%;
+    text-align: center;
+    img {
+      max-width: 100%;
+      width: 565px;
+    }
+  }
+  .content-des {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-404 {
+    color: #224269;
+    font: 150px "Roboto";
+  }
+  .title-notfound {
+    color: #333;
+    font: 36px "Roboto";
+  }
+  .content-des-a {
+    color: #007eff;
+    // text-decoration: underline;
+  }
+  .button-container .button-bg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+  }
+  .survey {
+    #change-survey,
+    #text-survey {
+      display: none;
+    }
+    #text-survey {
+      textarea {
+        width: 70%;
+        padding: 10px;
+        margin: 10px auto 25px;
+        display: block;
+        height: auto;
+        padding: 6px 12px;
+        border: 1px solid #9b9b9b;
+        border-radius: 4px;
+        @media (max-width: 767px){
+          width: 100%;
+        }
+      }
+    }
+    textarea,
+    button {
+      &:focus {
+        outline: none;
+      }
+    }
+    .button-container {
+      padding: 20px;
+      width: 100%;
+      .btn-description button {
+        width: 250px;
+        margin: 0 20px;
+        @media (max-width: 991px){
+          margin: 10px;
+          padding: 10px 20px;
+        }
+        @media (max-width: 450px){
+          margin: 8px;
+          width: 100px;
+          padding: 8px 8px;
+        }
+      }
+    }
+    .btn-description {
+      margin-bottom: 25px;
+      p {
+        margin-top: 5px;
+      }
+    }
+    #content_error{
+      color: red;
+      margin:8px 10px;
+    }
+    #btn-no-content{
+      display: none;
+    }
+  }
+}

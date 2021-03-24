@@ -1,0 +1,46 @@
+.service-merchant-account {
+  background: url("../images/bg-why-choose.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  height: inherit;
+  background-position: center;
+  color: $white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .why-choose {
+    background-image: none !important;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 30px;
+    h3.title {
+      display: none;
+    }
+    .feature {
+      margin-top: 0;
+    }
+  }
+  .service-title {
+    text-align: center;
+  }
+  .button-type-blue {
+    margin-bottom: 0;
+    .button {
+      border-color: $white !important;
+      color: $white !important;
+      background-color: #007eff !important;
+      margin-bottom: 65px;
+      border: 2px solid #ffffff !important;
+      &:hover{
+        color: #007eff !important;
+        background: $white !important;
+        border-color: $white !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service-merchant-account {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}

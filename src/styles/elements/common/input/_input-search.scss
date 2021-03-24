@@ -1,0 +1,27 @@
+.input-search {
+	position: relative;
+	margin: 32px 0;
+	color: #777777;
+
+	.input-search__input {
+		font-family: "Roboto";
+		padding: 13.5px 50px 13.5px 13.5px;
+		width: 100%;
+		font-size: 14px;
+		line-height: 16px;
+		border: 1px solid #dddddd;
+		border-radius: 3px;
+	}
+
+	.input-search__icon {
+		position: absolute;
+		height: 100%;
+		width: 50px;
+		top: 0;
+		right: 0;
+		font-size: 21px;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+	}
+}

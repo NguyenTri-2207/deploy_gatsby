@@ -1,0 +1,40 @@
+.section-order-success {
+  .content {
+    max-width: 767px;
+    margin: 0 auto;
+    background-color: #f0ffff;
+    padding: 30px 20px;
+  }
+  #pending-content-msg,
+  #paymented-content-msg {
+    display: none;
+  }
+  h6 {
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0 0 20px;
+  }
+  a {
+    color: #0073ac;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  table {
+    width: 100%;
+}
+  th {
+    background: #d9edf7;
+    text-align: inherit;
+  }
+  td,
+  th {
+    border: 1px solid #eee;
+    padding: 8px;
+    font-family: "Roboto";
+  }
+}
