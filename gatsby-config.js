@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: [`gatsby-plugin-gatsby-cloud`],
   pathPrefix: "/reponame",
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -9,6 +8,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
